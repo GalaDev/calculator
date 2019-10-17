@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+/* Title and Main Container */
+h1 {
+  text-align: center;
+  font-size: 1em;
+}
+
+.main-container {
+  height: 55vh;
+}
+
+/* Display Box */
+.display {
+  width: 100%;
+  background-color: black;
+  height: 15vh;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 3em;
+}
+
+/* Row */
+.row {
+  display: flex;
+  height: 25%;
+  max-width: 100%;
+}
+
+/* Top Row */
+.top-row > button:nth-child(1) {
+  width: 49.99%;
+}
+.top-row > button:nth-child(2) {
+  width: 25%;
+}
+.top-row > button:nth-child(3) {
+  width: 25%;
+}
+
+/* Body Row */
+.body-row {
+  flex-wrap: wrap;
+}
+.body-row > button {
+  width: 25%;
+}
+
+/* Bottom Row */
+/* 0 */
+.body-row > button:nth-child(13) {
+  width: 75%;
+}
+
+/* = */
+.body-row > button:nth-child(14) {
+  width: 25%;
+}
+
+/* Global Button Styling */
+button {
+  padding: 0;
+  border: 1px solid black;
+  font: inherit;
+  color: inherit;
+  background-color: #cfd7d3;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+}
+button:hover {
+  filter: brightness(85%);
+}
+
+/* Math Operators */
+.math-operator {
+  background-color: #c98640;
+}
